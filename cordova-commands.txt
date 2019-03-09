@@ -1,0 +1,29 @@
+/* Efetua a instalação do cordova globalmente utilizando npm */
+sudo npm install -g cordova
+
+/* Cria uma nova aplicação cordova HelloWorld na pasta hello */
+cordova create hello com.example.hello HelloWorld
+
+/* Acessa a pasta criada com a aplicação cordova */
+cd hello
+
+/* Adiciona a plataforma iOS ao projeto (somente MacOS) */
+cordova platform add ios
+
+/* Adiciona a plataforma Android ao projeto */
+cordova platform add android
+
+/* Valida se todos os requisitos do cordova estão instalados */
+cordova requirements
+
+/* Compila o projeto para as plataformas adicionadas */
+cordova build
+
+/* Compila o projeto para uma plataforma específica */
+cordova build android
+
+/* Executa o projeto em um emulador configurado previamente */
+cordova emulate android
+
+/* Executa o projeto em um aparelho que esteja conectado ao equipamento */
+cordova run android

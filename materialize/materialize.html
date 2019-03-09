@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Estrutura do menu dropdown -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Aula 1</a></li>
+        <li><a href="#!">Aula 2</a></li>
+        <li><a href="#!">Aula 3</a></li>
+        <li><a href="#!">Aula 4</a></li>
+    </ul>
+
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">FIAP</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Sobre o curso</a></li>
+                <li><a href="#">Sobre os professores</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Aulas<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+    
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="#">Sobre o curso</a></li>
+                <li><a href="#">Sobre os professores</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Aulas<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row" style="margin-top: 50px;">
+            <form class="col s12" id="formValidate" novalidate="novalidate">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">Nome</label>
+                        <!-- <span class="helper-text" data-error="wrong" data-success="right">É necessário informar um nome.</span> -->
+                    </div>
+
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Sobrenome</label>
+                        <!-- <span class="helper-text" data-error="wrong" data-success="right">É necessário informar um sobrenome.</span> -->
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                        <!-- <span class="helper-text" data-error="wrong" data-success="right">É necessário informar um email.</span> -->
+                    </div>
+
+                    <div class="input-field col s12 m4">
+                        <select>
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="1">Brasil</option>
+                        </select>
+                        <label>País</label>
+                        <!-- <span class="helper-text" data-error="wrong" data-success="right">Selecione um país.</span> -->
+                    </div>
+
+                    <div class="input-field col s12 m4">
+                        <select>
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="1">São Paulo</option>
+                        </select>
+                        <label>Estado</label>
+                        <!-- <span class="helper-text" data-error="wrong" data-success="right">Selecione um estado.</span> -->
+                    </div>
+
+                    <div class="input-field col s12 m4">
+                        <input id="zip_code" type="text" class="validate">
+                        <label for="zip_code">CEP</label>
+                        <!-- <span class="helper-text" data-error="wrong" data-success="right">É necessário informar um cep.</span> -->
+                    </div>
+
+                    <div class="input-field col s12">
+                        <p>
+                            <label>
+                                <input type="checkbox" />
+                                <span>Desejo receber promoções por email</span>
+                            </label>
+                        </p>
+                    </div>
+                    
+                    <div class="input-field col s12 m4">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="init.js"></script>
+</body>
+</html>
